@@ -1,0 +1,253 @@
+:root {
+  /* primarycolorOfSiteAndShadows */
+  --colorPrimary1: #0c0e12;
+  --colorPrimary2: #13151b;
+  --colorPrimary3: #16181f;
+  --colorPrimary4: #1c1f28;
+  --colorPrimary5: #20232d;
+  /* lighterShadows */
+  --colorPrimary6: #363942;
+  --colorPrimary7: #4c4f57;
+  --colorPrimary8: #62656c;
+  --colorPrimary9: #8f9196;
+  /* textColors */
+  --txtLight1: #ebeeec;
+  --txtLight2: #bcbebd;
+
+  --txtDark1: #20232d;
+  /* accents */
+  --colorSecondary: #89938d;
+
+  /* btnColor  */
+  --btnLight: #ebeeec;
+  --btnLight2: #929292;
+  --btnDark: #39455b;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  --hoverOnDark: #6b7e96;
+  --hoverOnLight: #39455b;
+
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+
+  --transition: all 0.3s linear;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* GLOBAL STYLES */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--colorPrimary6);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-top: 5rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-3);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* NAVBAR */
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
+.navCenter {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLogo {
+  width: 15vw;
+}
+.navBtn {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--btnLight);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.navBtn:hover {
+  color: var(--btnLight2);
+}
+
+.navLinks {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navBtn {
+    display: none;
+  }
+  .navCenter {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navLinks {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navLinks li {
+    margin-right: 2rem;
+    font-size: 1.25rem;
+  }
+  .navLinks a {
+    text-transform: capitalize;
+    color: var(--txtLight1);
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    padding: 0.5rem 0;
+  }
+  .navLinks a:hover {
+    color: var(--hoverOnDark);
+    box-shadow: 0px 2px var(--hoverOnDark);
+  }
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: var(--colorSecondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: var(--transition);
+  transform: translateX(-100%);
+}
+.showSidebar {
+  opacity: 1;
+  transform: translateX(0);
+}
+.sidebarLinks li {
+  opacity: 0;
+}
+.sidebarLinks li a {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--txtDark1);
+  letter-spacing: var(--spacing);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+.closeBtn {
+  position: absolute;
+  right: 4.75%;
+  top: 2.75%;
+  font-size: 2.5rem;
+  background: transparent;
+  border-color: transparent;
+  color: #bb2525;
+  cursor: pointer;
+}
+/* SIDEBAR ANIMATION*/
+.sidebarLinks li {
+  animation: slideRight 0.5s ease-in-out 0.3s forwards;
+}
+.sidebarLinks li:nth-of-type(1) {
+  animation-delay: 0.25s;
+}
+.sidebarLinks li:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.sidebarLinks li:nth-of-type(3) {
+  animation-delay: 0.75s;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

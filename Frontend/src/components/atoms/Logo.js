@@ -25,7 +25,11 @@ const Logo = () => {
 
   return (
     <Link to="/">
-      <Image fluid={fluid.fluid} className="logo" />
+      <Image
+        fluid={fluid.fluid}
+        className="navLogo"
+        alt="Michał Nitka site logo"
+      />
     </Link>
   )
 }

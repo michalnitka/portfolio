@@ -1,6 +1,10 @@
 import React from "react"
-import Logo from "../components/atoms/Logo"
+import NavBar from "../components/organisms/NavBar"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <div>
+      <NavBar />
+    </div>
+  )
 }
