@@ -28,5 +28,7 @@ const NavLinks = pages.map(link => {
   )
 })
 export default ({ styleClass }) => {
-  return <ul className={styleClass ? styleClass : ""}>{NavLinks}</ul>
+  return (
+    <ul className={`pageLinks ${styleClass ? styleClass : ""}`}>{NavLinks}</ul>
+  )
 }

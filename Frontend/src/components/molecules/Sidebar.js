@@ -1,5 +1,6 @@
 import React from "react"
 import NavLinks from "../atoms/NavLinks"
+import SocialLinks from "../atoms/SocialLinks"
 import { FaTimes } from "react-icons/fa"
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -12,6 +13,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         {isOpen && (
           <>
             <NavLinks styleClass="sidebarLinks" />
+            <SocialLinks styleClass="sidebarLinks" />
           </>
         )}
       </div>

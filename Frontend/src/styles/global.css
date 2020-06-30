@@ -218,6 +218,10 @@ p {
   transition: var(--transition);
   border-radius: var(--radius);
 }
+.sidebarLinks li a:hover {
+  background: var(--txtDark1);
+  color: var(--txtLight1);
+}
 .closeBtn {
   position: absolute;
   right: 4.75%;
@@ -228,6 +232,14 @@ p {
   color: #bb2525;
   cursor: pointer;
 }
+
+.socialLinks {
+  margin-top: 2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* SIDEBAR ANIMATION*/
 .sidebarLinks li {
   animation: slideRight 0.5s ease-in-out 0.3s forwards;
@@ -248,6 +260,27 @@ p {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.socialLinks.sidebarLinks li {
+  opacity: 0;
+  animation: slideUp 0.5s ease-in-out 0.3s forwards;
+}
+.socialLinks.sidebarLinks li:nth-of-type(1) {
+  animation-delay: 0.25s;
+}
+.socialLinks.sidebarLinks li:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
