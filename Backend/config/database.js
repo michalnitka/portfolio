@@ -12,6 +12,7 @@ module.exports = ({ env }) => ({
         // username: env("DATABASE_USERNAME", ""),
         // password: env("DATABASE_PASSWORD", ""),
         uri: env("DATABASE_URI"),
+        database: env("DATABASE_NAME"),
       },
       options: {
         // authenticationDatabase: env("AUTHENTICATION_DATABASE", null),
