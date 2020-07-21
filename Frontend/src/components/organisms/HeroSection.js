@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import HeroImage from "../atoms/HeroImage"
 import ButtonCTA from "../atoms/CTA"
+import SocialLinks from "../atoms/SocialLinks"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 
@@ -25,6 +26,7 @@ const HeroSection = ({ styleClass }) => {
             My works
           </ButtonCTA>
         </div>
+        <SocialLinks styleClass="hero-links" />
       </aside>
     </section>
   )

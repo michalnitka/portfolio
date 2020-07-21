@@ -12,8 +12,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <div className="sideContainer">
         {isOpen && (
           <>
-            <NavLinks styleClass="sidebarLinks" />
-            <SocialLinks styleClass="sidebarLinks" />
+            <NavLinks styleClass="sidebar-links" />
+            <SocialLinks styleClass="sidebar-links" />
           </>
         )}
       </div>
