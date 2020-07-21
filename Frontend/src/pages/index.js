@@ -1,10 +1,11 @@
 import React from "react"
-import NavBar from "../components/organisms/NavBar"
+import Layout from "../components/templates/Layout"
+import HeroSection from "../components/organisms/HeroSection"
 
 export default function Home() {
   return (
-    <div>
-      <NavBar />
-    </div>
+    <Layout>
+      <HeroSection styleClass="section-dark" />
+    </Layout>
   )
 }

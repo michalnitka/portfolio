@@ -22,6 +22,8 @@
   --btnLight: #ebeeec;
   --btnLight2: #929292;
   --btnDark: #39455b;
+  --btnColor: #f39410;
+  --btnDarker: #6b7e96;
 
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -67,10 +69,10 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  color: var(--txtLight1);
 }
 h1 {
   font-size: 3rem;
@@ -85,8 +87,16 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+  color: var(--txtLight2);
+}
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  min-width: 80vw;
+  padding: 10px;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -135,7 +145,7 @@ p {
   align-items: center;
 }
 .navLogo {
-  width: 15vw;
+  min-width: 8rem;
 }
 .navBtn {
   font-size: 2rem;
@@ -283,4 +293,44 @@ p {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* HERO SECTION */
+
+.hero-img {
+  display: none;
+}
+.buttons-conteiner {
+  display: flex;
+  margin: 10vh 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+.btn.primary::before,
+.btn.secondary::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--btnColor);
+  border-radius: 40px;
+  transform: translate(7%, 7%);
+  z-index: -1;
+}
+.btn.secondary::before {
+  background-color: var(--btnDarker);
 }
