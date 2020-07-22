@@ -13,9 +13,9 @@ const HeroSection = ({ styleClass }) => {
       <HeroImage />
       <aside className="hero-info">
         <h2>Hi, I'm Michał Nitka</h2>
-        <p>I looking for my first job as junior front-end developer</p>
+        <p>I'm looking for my first job as a junior front-end developer</p>
         <p>
-          Hope you will find here, your next employee{" "}
+          Hope you will find your next employee here{" "}
           <span role="img" aria-label="winking face emoji">
             😉
           </span>
