@@ -1,15 +1,18 @@
 {
-  "kind": "singleType",
-  "collectionName": "logos",
+  "kind": "collectionType",
+  "collectionName": "images",
   "info": {
-    "name": "logo"
+    "name": "Images"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "image": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -18,7 +21,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     }
   }
 }
