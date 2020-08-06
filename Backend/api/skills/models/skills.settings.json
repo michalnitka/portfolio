@@ -1,16 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "images",
+  "collectionName": "skills",
   "info": {
-    "name": "Images"
+    "name": "Skills"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "Technology": {
       "type": "string"
+    },
+    "Info": {
+      "type": "text"
     },
     "Image": {
       "model": "file",
@@ -22,6 +25,15 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "frontend",
+        "backend",
+        "other"
+      ],
+      "enumName": "type"
     }
   }
 }

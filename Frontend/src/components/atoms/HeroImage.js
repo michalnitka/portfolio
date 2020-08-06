@@ -2,29 +2,21 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-// const query = graphql`
-//   {
-//     file(name: { eq: "hero-img" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
-
 const HeroImage = () => {
   const {
-    file: {
-      childImageSharp: { fluid },
+    strapiImages: {
+      Image: {
+        childImageSharp: { fluid },
+      },
     },
   } = useStaticQuery(graphql`
     {
-      file(name: { eq: "hero-img" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+      strapiImages(Name: { eq: "hero" }) {
+        Image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }

@@ -4,13 +4,15 @@ import Image from "gatsby-image"
 
 const Logo = () => {
   const {
-    strapiLogo: {
-      image: { childImageSharp: fluid },
+    strapiImages: {
+      Image: {
+        childImageSharp: { fluid },
+      },
     },
   } = useStaticQuery(graphql`
     {
-      strapiLogo {
-        image {
+      strapiImages(Name: { eq: "logo" }) {
+        Image {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -23,11 +25,7 @@ const Logo = () => {
 
   return (
     <Link to="/">
-      <Image
-        fluid={fluid.fluid}
-        className="navLogo"
-        alt="Michał Nitka site logo"
-      />
+      <Image fluid={fluid} className="navLogo" alt="Michał Nitka site logo" />
     </Link>
   )
 }

@@ -22,7 +22,6 @@ Icon
 # Windows
 ############################
 
-
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -109,8 +108,8 @@ coverage
 ############################
 
 .env
+license.txt
 exports
 .cache
 build
 package-lock.json
-

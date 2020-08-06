@@ -1,8 +1,8 @@
 {
   "name": "backend",
   "private": true,
-  "version": "0.2.0",
-  "description": "Backend for my  portfolio",
+  "version": "0.1.0",
+  "description": "A Strapi backend for my portfolio",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,14 +11,12 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "cross-env": "^7.0.2",
     "strapi": "3.1.1",
     "strapi-admin": "3.1.1",
     "strapi-connector-mongoose": "3.1.1",
     "strapi-plugin-content-manager": "3.1.1",
     "strapi-plugin-content-type-builder": "3.1.1",
     "strapi-plugin-email": "3.1.1",
-    "strapi-plugin-graphql": "^3.1.1",
     "strapi-plugin-upload": "3.1.1",
     "strapi-plugin-users-permissions": "3.1.1",
     "strapi-provider-upload-cloudinary": "^3.1.1",
@@ -28,7 +26,7 @@
     "name": "Michał Nitka"
   },
   "strapi": {
-    "uuid": "bbf77a22-03fe-44a5-910b-94f4d3b710f2"
+    "uuid": "563bba27-4c91-4546-9580-5b7fc4194406"
   },
   "engines": {
     "node": ">=10.0.0",
