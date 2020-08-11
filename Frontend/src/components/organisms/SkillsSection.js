@@ -9,9 +9,11 @@ const SkillsSection = ({ styleClass }) => {
         title="Technologies that I have used so far"
         styleClass={styleClass}
       />
-      <Skills type="frontend" />
-      <Skills type="backend" />
-      <Skills type="other" />
+      <div className="cards-wrapper">
+        <Skills type="frontend" />
+        <Skills type="backend" />
+        <Skills type="other" />
+      </div>
     </section>
   )
 }
