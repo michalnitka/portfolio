@@ -4,11 +4,8 @@ import Skills from "../atoms/Skills"
 
 const SkillsSection = ({ styleClass }) => {
   return (
-    <section className={`section-center ${styleClass ? styleClass : ""}`}>
-      <Title
-        title="Technologies that I have used so far"
-        styleClass={styleClass}
-      />
+    <section className={`${styleClass ? styleClass : ""}`}>
+      <Title title="Technologies that I have used so far" styleClass="light" />
       <div className="cards-wrapper">
         <Skills type="frontend" />
         <Skills type="backend" />

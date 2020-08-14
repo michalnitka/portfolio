@@ -9,7 +9,7 @@ const HeroSection = ({ styleClass }) => {
   const works = useRef(null)
   const executeScroll = () => scrollToRef(works)
   return (
-    <section className={`section-center ${styleClass ? styleClass : ""}`}>
+    <section className={`${styleClass ? styleClass : ""}`}>
       <HeroImage />
       <aside className="hero-info">
         <h2>Hi, I'm Michał Nitka</h2>
