@@ -15,7 +15,7 @@ module.exports = {
       options: {
         apiURL: `https://michalnitka-portfolio-backend.herokuapp.com`,
         queryLimit: 1000,
-        contentTypes: ["images", "skills"],
+        contentTypes: ["images", "skills", "projects"],
       },
     },
     {
