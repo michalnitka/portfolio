@@ -1,13 +1,10 @@
-import React, { useRef } from "react"
+import React from "react"
 import HeroImage from "../atoms/HeroImage"
 import ButtonCTA from "../atoms/CTA"
 import SocialLinks from "../atoms/SocialLinks"
-
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
+import { Link } from "react-scroll"
 
 const HeroSection = ({ styleClass }) => {
-  const works = useRef(null)
-  const executeScroll = () => scrollToRef(works)
   return (
     <section className={`${styleClass ? styleClass : ""}`}>
       <HeroImage />
@@ -21,10 +18,14 @@ const HeroSection = ({ styleClass }) => {
           </span>
         </p>
         <div className="buttons-conteiner">
-          <ButtonCTA styledClass="secondary"> Contact</ButtonCTA>
-          <ButtonCTA onClick={executeScroll} styledClass="primary">
-            My works
+          <ButtonCTA direction="/" styledClass="secondary">
+            {" "}
+            Contact
           </ButtonCTA>
+
+          <Link className="btn primary" to="works" spy={true} smooth={true}>
+            My works
+          </Link>
         </div>
         <SocialLinks styleClass="hero-links" />
       </aside>
