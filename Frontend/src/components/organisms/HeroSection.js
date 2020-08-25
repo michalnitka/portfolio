@@ -18,7 +18,7 @@ const HeroSection = ({ styleClass }) => {
           </span>
         </p>
         <div className="buttons-conteiner">
-          <ButtonCTA direction="/" styledClass="secondary">
+          <ButtonCTA direction="/contact" styledClass="secondary">
             {" "}
             Contact
           </ButtonCTA>

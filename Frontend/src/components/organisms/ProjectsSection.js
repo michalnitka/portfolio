@@ -3,14 +3,16 @@ import Project from "../atoms/Project"
 import Title from "../atoms/SectionTitle"
 import Button from "../atoms/CTA"
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ title, button, projects }) => {
   return (
     <section className="projects-wrapper" id="works">
-      <Title title="Featured projects" styleClass="dark" />
-      <Project />
-      <Button direction="/projects" styledClass="secondary">
-        All projects
-      </Button>
+      <Title title={title} styleClass="dark" />
+      <Project projects={projects} />
+      {button && (
+        <Button direction="/projects" styledClass="secondary">
+          All projects
+        </Button>
+      )}
     </section>
   )
 }

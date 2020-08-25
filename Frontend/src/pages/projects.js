@@ -1,26 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/templates/Layout"
-import HeroSection from "../components/organisms/HeroSection"
-import SkillsSection from "../components/organisms/SkillsSection"
 import ProjectsSection from "../components/organisms/ProjectsSection"
 
-export default function Home({ data }) {
+const projects = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
   } = data
   return (
     <Layout>
-      <HeroSection styleClass="section-dark" />
-      <SkillsSection styleClass="section-light" />
-      <ProjectsSection projects={projects} title="Featured projects" button />
+      <ProjectsSection projects={projects} title="My projects" button={false} />
     </Layout>
   )
 }
 
+export default projects
+
 export const query = graphql`
   {
-    allStrapiProjects(filter: { featured: { eq: true } }) {
+    allStrapiProjects {
       nodes {
         description
         stack {
