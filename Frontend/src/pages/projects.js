@@ -9,7 +9,11 @@ const projects = ({ data }) => {
   } = data
   return (
     <Layout>
-      <ProjectsSection projects={projects} title="My projects" button={false} />
+      <ProjectsSection
+        projects={projects}
+        title="Moje projekty"
+        button={false}
+      />
     </Layout>
   )
 }

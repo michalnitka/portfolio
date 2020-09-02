@@ -1016,3 +1016,46 @@ section.about-wrapper .info a {
     font-size: 4rem;
   }
 }
+/* Contact page*/
+
+section.contact-form-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--txtDark1);
+}
+form.contact-form {
+  display: flex;
+  height: 70vh;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form.contact-form label {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  color: var(--txtLight1);
+}
+form.contact-form input {
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 40px;
+  background-color: var(--txtLight2);
+}
+form.contact-form input:focus {
+  outline: none;
+  border-color: var(--btnColor);
+}
+textarea {
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  background-color: var(--txtLight2);
+}

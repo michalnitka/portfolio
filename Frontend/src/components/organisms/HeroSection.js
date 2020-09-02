@@ -9,10 +9,10 @@ const HeroSection = ({ styleClass }) => {
     <section className={`${styleClass ? styleClass : ""}`}>
       <HeroImage />
       <aside className="hero-info">
-        <h2>Hi, I'm Michał Nitka</h2>
-        <p>I'm looking for my first job as a junior front-end developer</p>
+        <h2>Cześć, nazywam się Michał Nitka</h2>
+        <p>Szukam swojej pierwszej pracy jako junior front-end developer</p>
         <p>
-          Hope you will find your next employee here{" "}
+          Mam nadzieję, że znajdziesz tu swojego przyszłego współpracownika{" "}
           <span role="img" aria-label="winking face emoji">
             😉
           </span>
@@ -20,11 +20,11 @@ const HeroSection = ({ styleClass }) => {
         <div className="buttons-conteiner">
           <ButtonCTA direction="/contact" styledClass="secondary">
             {" "}
-            Contact
+            Kontakt
           </ButtonCTA>
 
           <Link className="btn primary" to="works" spy={true} smooth={true}>
-            My works
+            Moje prace
           </Link>
         </div>
         <SocialLinks styleClass="hero-links" />

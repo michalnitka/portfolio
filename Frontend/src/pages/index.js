@@ -13,7 +13,7 @@ export default function Home({ data }) {
     <Layout>
       <HeroSection styleClass="section-dark" />
       <SkillsSection styleClass="section-light" />
-      <ProjectsSection projects={projects} title="Featured projects" button />
+      <ProjectsSection projects={projects} title="Przypięte projekty" button />
     </Layout>
   )
 }

@@ -9,18 +9,18 @@ const pages = [
   },
   {
     id: 2,
-    text: "projects",
+    text: "projekty",
     url: "/projects/",
   },
 
   {
     id: 3,
-    text: "about",
+    text: "o mnie",
     url: "/about/",
   },
   {
     id: 4,
-    text: "contact",
+    text: "kontakt",
     url: "/contact/",
   },
 ]

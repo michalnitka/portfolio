@@ -9,24 +9,25 @@ const about = () => {
       <section className="about-wrapper">
         <HeroImage />
         <div className="info">
-          <p>Hello, my name is Michał Nitka</p>
+          <p>Cześć, nazywam się Michał Nitka</p>
           <p>
-            I'm looking for my first job as a Front end Developer. I am a person
-            who assimilates knowledge quickly, I work very well in a team, can
-            talk to the client and play Fifa well.
+            Szukam swojej pierwszej pracy jako Front end Developer. Jestem osobą
+            która szybko przyswaja wiedzę, bardzo dobrze pracuje w zespole,
+            potrafię rozmawiać z klientem oraz dobrze gram w Fife.
           </p>
           <p>
-            It is difficult to find someone from the IT industry among my
-            previous employers. However, they allowed me to develop in other
-            areas. I worked as a team coordinator at Multikino, as an office
-            administrator at ID Logistics and as a telecommunications
-            installation and construction fitter for the PLAY mobile network.
+            Trudno jest znaleźć wśród moich byłych pracodawców przedstawicieli
+            branży IT. Jednak pozwolili mi oni na rozwój w innych dziedzinach.
+            Pracowałem jako koordynator zespołu w Multikinie, administrator
+            magazynu w ID Logistics oraz jako monter instalacji
+            telekomunikacyjnych i konstrukcji dla sieci PLAY.
           </p>
+
           <p>
-            If you are looking for a person who will bring positive energy to
-            your team. He does not know everything, but he is aware of his
-            shortcomings in skills, which he quickly makes up for and is able to
-            talk to the client, please contact me.
+            Jeśli szukasz osoby, która dostarczy pozytywnej energii do zespołu.
+            Nie udaje, że wie wszystko, jednak zna swoje swoje słabości i stara
+            się szybko je nadrobić. Jest doświadczony w pracy z klientem, proszę
+            skontaktuj się ze mną.
           </p>
           <CTA direction="/contact" styledClass="primary">
             Contact
