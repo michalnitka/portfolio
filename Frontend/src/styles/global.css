@@ -1157,3 +1157,37 @@ form.contact-form button {
     margin-bottom: 50px;
   }
 }
+.section-success {
+  background-color: var(--txtDark1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15vh 0;
+  justify-content: center;
+  align-items: center;
+}
+.section-success h1 {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-success a {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-success h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 4095px) {
+  .section-success h1 {
+    font-size: 4rem;
+  }
+  .section-success a {
+    font-size: 2.5rem;
+    padding: 15px 30px;
+  }
+}
