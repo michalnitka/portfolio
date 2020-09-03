@@ -6,9 +6,11 @@ const Contact = () => {
     <Layout>
       {
         <section className="contact-form-section">
-          <h1>Contact with me</h1>
+          <h1>Skontaktuj się ze mną</h1>
+
           <form
             className="contact-form"
+            aria-label="Contact form"
             name="contact"
             method="post"
             data-netlify="true"
@@ -18,26 +20,29 @@ const Contact = () => {
 
             <label htmlFor="email" id="email">
               Email
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </label>
 
             <label htmlFor="name">
-              Name
+              Imię
               <input type="text" name="name" id="name" />
             </label>
 
             <label htmlFor="message">
-              Message
+              Wiadomość
               <textarea
                 type="text"
                 name="message"
                 id="message"
                 cols="30"
                 rows="5"
+                required
               />
             </label>
 
-            <button type="submit">Send</button>
+            <button type="submit" className="btn primary">
+              Wyślij
+            </button>
           </form>
         </section>
       }

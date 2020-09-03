@@ -10,7 +10,7 @@ const NavBar = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <nav className="navBar">
+    <nav className="navBar" aria-label="Main">
       <div className="navCenter">
         <div className="navHeader">
           <Logo />
